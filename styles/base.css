@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows:  1fr auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+}
+
+/*HEADER*/
+header {
+    background-color: magenta;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.course-title{
+    font-size:1.4rem;
+    margin-bottom: 0.5em;
+
+}
+
+/* NAVIGATION (Flexbox) */
+
+.nav-menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.nav-menu a {
+    color: palegoldenrod;
+    text-decoration: none;
+}
+.nav-menu li {
+    margin-right: 20px;
+}
+
+/* MAIN GRID */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.student-name{
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    background-color: palevioletred;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+
+/* FOOTER */
+footer {
+    background-color: magenta;
+    color: palegoldenrod;
+    text-align: center;
+    padding: 1rem;
+    clear: both;
+}
+    
