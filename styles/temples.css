@@ -1,7 +1,7 @@
 body{
 font-family: 'Roboto', sans-serif;
 margin:0;
-background:rgba(128, 0, 128, 0.288);
+background:white;
 }
 
 header{
@@ -47,7 +47,7 @@ gap:1rem;
 }
 
 figure{
-background:rgba(128, 0, 128, 0.416);
+background:rgba(255, 192, 203, 0.644);
 padding:10px;
 text-align:center;
 }
