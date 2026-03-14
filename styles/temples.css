@@ -5,8 +5,8 @@ background:rgba(128, 0, 128, 0.288);
 }
 
 header{
-background: rgb(110, 43, 226);
-color:pink;
+background: rgba(110, 43, 226, 0.841);
+color:aliceblue;
 padding:0;
 text-align:center;
 }
@@ -17,7 +17,7 @@ display:none;
 }
 
 nav a{
-color:pink;
+color:aliceblue;
 padding:10px;
 text-decoration:none;
 }
@@ -30,7 +30,7 @@ background:white;
 font-size:1.5rem;
 background:none;
 border:none;
-color:pink;
+color:aliceblue;
 cursor:pointer;
 }
 
@@ -61,7 +61,7 @@ footer{
 text-align:center;
 padding:1rem;
 background:rgb(110, 43, 226);
-color: pink;
+color: aliceblue;
 margin-top:20px;
 }
 
