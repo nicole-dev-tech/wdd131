@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Africa</title>
+  <meta name="description" content="Discover Capetown,a beautiful coastal city in South Africa.">
+  <meta name="author" content="Nicole Makayi">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="header">
+  <h1>South Africa</h1>
+</header>
+
+<main>
+  <section class="hero">
+
+    <!-- Responsive Image -->
+    <image>
+      <img src="images/hero-large.webp">
+      <img src="images/hero-small.webp">
+    </image>
+
+    <!-- Data Box -->
+    <div class="card data-card">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong>  2,446 sq km</li>
+        <li><strong>Population:</strong> ~4,800,000 (metro)</li>
+        <li><strong>Capital:</strong> Capetown</li>
+        <li><strong>Languages:</strong> Afrikaans, isiXhosa, English</li>
+        <li><strong>Currency:</strong> South African Rand</li>
+        <li><strong>Time Zone:</strong> SAST (UTC+2)</li>
+        <li><strong>Calling Code:</strong> +27</li>
+        <li><strong>Famous For:</strong> Table Mountain, Beaches, Tourism</li>
+      </ul>
+    </div>
+
+    <!-- Weather Box -->
+    <div class="card weather-card">
+      <h2>Weather</h2>
+
+      <!-- SVG icon for mobile -->
+      <img src="images/weather-icon.svg" alt="weather icon" class="weather-icon">
+
+      <p><strong>Temperature:</strong> <span id="temp">18</span> °C</p>
+      <p><strong>Conditions:</strong> Sunny with light clouds</p>
+      <p><strong>Wind:</strong> <span id="wind">20</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+
+  <p>&copy; <span id="currentyear"></span> 💥 Nicole Makayi💥 South Africa</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
