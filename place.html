@@ -25,10 +25,13 @@
   <section class="hero">
 
     <!-- Responsive Image -->
-    <image>
-      <img src="images/hero-large.webp">
-      <img src="images/hero-small.webp">
-    </image>
+    <picture>
+      <img
+      src="images/hero-small.webp"
+      srcset="images/hero-small.webp 480w, images/hero-large.webp 800w"
+      sizes="(min-width: 768px) 800px, 480px"
+      alt="Cape Town Table Mountain">
+    </picture>
 
     <!-- Data Box -->
     <div class="card data-card">
@@ -55,7 +58,7 @@
       <p><strong>Temperature:</strong> <span id="temp">18</span> °C</p>
       <p><strong>Conditions:</strong> Sunny with light clouds</p>
       <p><strong>Wind:</strong> <span id="wind">20</span> km/h</p>
-      <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+      <p><strong>Wind Chill:</strong> <span id="windChill"></span>None</p>
     </div>
 
   </section>

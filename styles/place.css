@@ -1,5 +1,5 @@
 :root {
-  --primary: #c8102e;
+  --primary: rgb(0, 128, 75);
   --secondary: #007e3a;
   --bg-glass: rgba(255, 255, 255, 0.15);
   --text: #222;
@@ -39,7 +39,6 @@ body {
   width: 100%;
   height: auto;
   border-radius: 30px;
-  object-fit: cover;
 }
 
 /* GLASS CARD */
@@ -50,24 +49,19 @@ body {
   border-radius: 12px;
   padding: 1.2rem;
   width: 260px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
 
 /* DATA POSITION */
 .data-card {
-  top: 30px;
-  left: 30px;
+  top: 20px;
+  left: 20px;
 }
 
 /* WEATHER POSITION */
 .weather-card {
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
 }
 
 /* LIST */
@@ -76,22 +70,20 @@ body {
 }
 
 .card li {
-  margin-bottom: 6px;
-  font-size: 0.9rem;
+  margin-bottom: 5px;
+
 }
 
 /* WEATHER ICON */
 .weather-icon {
   width: 40px;
-  margin-bottom: 10px;
 }
 
 /* PSEUDO ELEMENT (REQUIRED) */
-image {
-  .weather-card h2::after {
-    content: "";
-  }
-}
+.weather-card h2::after
+ {
+  content: " ⛅"; 
+ }
 
 /* FOOTER */
 .footer {
@@ -99,18 +91,20 @@ image {
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 10px;
 }
 
 /* MOBILE */
-image { 
-  .card {
-    position: static;
-    margin: 1rem auto;
-    width: 90%;
-  }
-}
-  .hero {
+@media (max-width: 768px) 
+{
+
+    .card {
+
+        position: static;
+        margin: 1rem auto;
+        width: 90%;
+        }
+.hero {
     display: flex;
     flex-direction: column;
-  }
+    }
+}
