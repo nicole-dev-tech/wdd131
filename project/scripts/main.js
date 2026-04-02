@@ -53,3 +53,20 @@ if (form) {
     form.reset();
   });
 }
+
+// LOAD SAVED ENROLLMENT
+function loadEnrollment() {
+  const confirmation = document.querySelector("#confirmation");
+  const data = localStorage.getItem("educonnectEnrollment");
+
+  if (!data || !confirmation) return;
+
+  const enrollment = JSON.parse(data);
+
+  confirmation.textContent = `Welcome back ${enrollment.student}! You previously selected ${enrollment.subject}.`;
+}
+
+// INITIALIZE FUNCTIONS
+displaySubjects(subjects);
+handleForm();
+loadEnrollment();
