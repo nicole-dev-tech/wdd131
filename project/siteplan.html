@@ -4,49 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Site Plan | Connect&Learn Hub</title>
+<meta name="description" content="Connect&Learn Hub is an educational website designed to connect students with qualified online tutors across various academic subjects and grade levels. The purpose of the site is to provide clear information about tutoring services, available subjects, and allow students or parents to submit enrollment interest through an accessible online form.">
+<meta name="author" content="Nicole Makayi">
+<link rel="stylesheet" href="styles/connect.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="scripts/getdates.js" defer></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-<style>
- body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #f5f7fa;
-    color: #333;
-  }
-
-  header {
-    background-color: #2a6f97;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  h1, h2 {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  section {
-    padding: 1.5rem;
-    margin: 1rem;
-    background: white;
-    border-radius: 10px;
-  }
-
-  .color-box {
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-  .wireframe {
-    border: 2px dashed #ccc;
-    padding: 1rem;
-    margin-top: 1rem;
-  }
-</style>
 </head>
 
 <body>
@@ -60,18 +25,17 @@
 <section>
   <h2>Site Name</h2>
   <p><strong>Connect&Learn Hub</strong></p>
-  <p>This name represents a platform that connects students with tutors while promoting learning and academic growth.</p>
+  <p>This name represents a platform that connects students with tutors while promoting academic growth.</p>
 </section>
 
 <section>
   <h2>Site Purpose</h2>
-  <p>The website provides an online tutoring platform for students (Grades 8–12). It allows users to:</p>
+  <p>The website provides an online tutoring platform for students (Grades 8–12). Users can:</p>
   <ul>
     <li>View available subjects</li>
     <li>Learn about tutoring services</li>
     <li>Submit an enrollment form</li>
   </ul>
-</style>
 </section>
 
 <section>
@@ -86,13 +50,13 @@
   <h2>Color Schema</h2>
   <p>Main colors used:</p>
 
-  <div class="color-box" style="background:#2a6f97;"></div>
-  <p>#2a6f97 → Used for headers, navigation</p>
+  <div class="color-box blue"></div>
+  <p>#2a6f97 → Used for headers and navigation</p>
 
-  <div class="color-box" style="background:#f5f7fa;"></div>
+  <div class="color-box light"></div>
   <p>#f5f7fa → Background color</p>
 
-  <div class="color-box" style="background:#ffffff; border:1px solid #ccc;"></div>
+  <div class="color-box white"></div>
   <p>#ffffff → Content sections</p>
 </section>
 
@@ -125,6 +89,12 @@
 </section>
 
 </main>
+
+<footer>
+  <p>&copy; <span id="currentyear"></span>Connect&Learn Hub</p>
+        <p id="lastModified"></p>
+</footer>
+
 
 </body>
 </html>
