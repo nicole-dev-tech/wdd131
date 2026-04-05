@@ -38,10 +38,10 @@ body {
 .hero img {
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
-/* GLASS CARD */
+/*  CARDs */
 .card {
   position: absolute;
   background: var(--bg-glass);
@@ -70,7 +70,7 @@ body {
 }
 
 .card li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
 }
 
@@ -96,7 +96,6 @@ body {
 /* MOBILE */
 @media (max-width: 768px) 
 {
-
     .card {
 
         position: static;
