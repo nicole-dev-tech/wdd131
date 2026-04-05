@@ -32,7 +32,8 @@
     <!-- Product -->
     <label for="product">Product Name</label>
     <select id="product" name="product" required>
-      <option value="" disabled selected>Select a Product ...</option>
+    
+       <option value="" disabled selected>Select a Product ...</option>
     </select>
 
     <!-- Rating -->
@@ -55,10 +56,14 @@
     <fieldset>
       <legend>Useful Features (Check all that apply)</legend>
 
-      <label><input type="checkbox" name="features" value="durability"> Durability</label>
-      <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-      <label><input type="checkbox" name="features" value="performance"> Performance</label>
-      <label><input type="checkbox" name="features" value="design"> Design</label>
+      <label for="durability">
+        <input type="checkbox" name="features" value="durability"> Durability</label>
+      <label for="ease">
+        <input type="checkbox" name="features" value="ease"> Ease of Use</label>
+      <label for="perfomance">
+        <input type="checkbox" name="features" value="performance"> Performance</label>
+      <label for="design">
+        <input type="checkbox" name="features" value="design"> Design</label>
 
     </fieldset>
 
