@@ -51,3 +51,15 @@ footer {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  main {
+    max-width: 700px;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
