@@ -1,56 +1,106 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header */
 header {
-  background: #4b004b;
-  color: white;
+  background-color: #4b004b;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
 }
 
+/* Main container */
 main {
   max-width: 500px;
-  margin: auto;
-  background: #d3ccd3;
+  margin: 20px auto;
+  background-color: #d3ccd3;
   padding: 20px;
   border-radius: 8px;
 }
 
+/* Labels */
 label {
   display: block;
-  margin-top: 15px;
+  margin-top: 12px;
+  font-weight: 500;
 }
 
-select, input, textarea {
+/* Inputs, select, textarea */
+select,
+input[type="text"],
+input[type="date"],
+textarea {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
+/*  RADIO + CHECKBOX layout */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+/* Inline grouping for radio + checkbox */
+fieldset label {
+  display: inline-block ;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+/* Fieldset styling */
 fieldset {
   margin-top: 15px;
-  border: none;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
 }
 
+/* Legend */
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* Submit button */
 input[type="submit"] {
   margin-top: 20px;
-  background: #ccc;
+  background-color: #4b004b;
+  color: #fff;
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
 }
 
+input[type="submit"]:hover {
+  background-color: #6a006a;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  background: #4b004b;
+  background-color: #4b004b;
   color: white;
   padding: 10px;
   margin-top: 20px;
 }
 
+/* Responsive */
 @media (min-width: 768px) {
   main {
     max-width: 700px;
@@ -62,4 +112,3 @@ footer {
     display: block;
   }
 }
-
